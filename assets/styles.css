@@ -17,10 +17,9 @@ body{
 
 .principal{
     align-items: center;
-    border: 1px solid red;
     display: flex;
     flex-direction: column;
-    width: 90vw;
+    width: auto;
     height: auto;
 }
 
@@ -35,7 +34,7 @@ body{
 
 .principal__input{
     margin-bottom: 1rem;
-    width: 50vw;
+    width: 40vw;
 }
 
 .principal__tarefa{
@@ -64,6 +63,12 @@ body{
 
 .botao__remover:hover{
     background-color: var(--vermelho-escuro);
+    color: var(--bege-claro);
+    transition: 0.3s;
+}
+
+.botao__adicionar:hover{
+    background-color: var(--verde-escuro);
     color: var(--bege-claro);
     transition: 0.3s;
 }
