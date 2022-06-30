@@ -1,0 +1,69 @@
+:root{
+    --amarelo-claro: #F5F0BB;
+    --bege-claro: #F0EBE3;
+    --branco: #FFF;
+    --fonte-roboto: 'Roboto', sans-serif;
+    --fonte-gentium: 'Gentium Book Plus', serif;
+    --verde-claro: #90C8AC;
+    --verde-medio: #53BF9D;
+    --verde-escuro: #377D71;
+    --vermelho: #F94C66;
+    --vermelho-escuro: #B20600;
+}
+
+body{
+    background-color: var(--amarelo-claro);
+}
+
+.principal{
+    align-items: center;
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    height: auto;
+}
+
+.principal__secao{
+    background-color: var(--bege-claro);
+    border: none;
+    border-radius: 1rem;
+    margin-top: 1rem;
+    padding: 1rem;
+    position: fixed;
+}
+
+.principal__input{
+    margin-bottom: 1rem;
+    width: 50vw;
+}
+
+.principal__tarefa{
+    font-family: var(--fonte-roboto);
+}
+
+.titulo__principal{
+    font-family: var(--fonte-gentium);
+    text-align: center;
+}
+
+.botao__remover{
+    background-color: var(--vermelho);
+    border: none;
+    border-radius: 1rem;
+    padding: 0.6rem;
+}
+
+.botao__adicionar{
+    background-color: var(--verde-claro); 
+    border: none;
+    border-radius: 1rem;
+    padding: 0.6rem;
+    margin-bottom: 1rem;
+}
+
+.botao__remover:hover{
+    background-color: var(--vermelho-escuro);
+    color: var(--bege-claro);
+    transition: 0.3s;
+}
