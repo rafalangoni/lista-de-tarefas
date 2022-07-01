@@ -2,6 +2,7 @@
     --amarelo-claro: #F5F0BB;
     --bege-claro: #F0EBE3;
     --branco: #FFF;
+    --cinza-claro: #F0EBE3;
     --fonte-roboto: 'Roboto', sans-serif;
     --fonte-gentium: 'Gentium Book Plus', serif;
     --verde-claro: #90C8AC;
@@ -70,5 +71,19 @@ body{
 .botao__adicionar:hover{
     background-color: var(--verde-escuro);
     color: var(--bege-claro);
+    transition: 0.3s;
+}
+
+.lista__itens{
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+    padding: 1rem;
+    text-decoration: none;
+    list-style: square;
+}
+
+.lista__itens:hover{
+    background-color: var(--branco);
     transition: 0.3s;
 }
