@@ -3,6 +3,12 @@ let itemDaLista = document.querySelector(".lista__itens")
 let botaoAdicionar = document.querySelector(".botao__adicionar");
 let botaoRemover = document.querySelector(".botao__remover")
 
+
+/**
+ * O primeiro Li criado está oculto. Fiz isso porque na primeira adição, como não havia elementos
+ * a remoção não funcionava. Então criei um Li com display: none, para que a iteração
+ * funcionasse normalmente.
+ */
 botaoAdicionar.addEventListener("click", (evento) => {
     evento.preventDefault;
     let valorDoInput = document.querySelector("#tarefa").value;
