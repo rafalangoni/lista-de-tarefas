@@ -3,7 +3,8 @@ let itemDaLista = document.querySelector(".lista__itens")
 let botaoAdicionar = document.querySelector(".botao__adicionar");
 let botaoRemover = document.querySelector(".botao__remover")
 
-botaoAdicionar.addEventListener("click", () => {
+botaoAdicionar.addEventListener("click", (evento) => {
+    evento.preventDefault;
     let valorDoInput = document.querySelector("#tarefa").value;
     if (valorDoInput == '' || valorDoInput == null) {
         alert("Digite alguma tarefa a ser incluída.");
@@ -14,24 +15,19 @@ botaoAdicionar.addEventListener("click", () => {
     itemDaListaLi.classList.add("lista__itens");
     listaDeItens.appendChild(itemDaListaLi);
     document.querySelector("#tarefa").value = '';
-    let botaoIncluirClicado = true;
-    return botaoIncluirClicado;
 })
-
-/**
- * essa parte de baixo não está fucional
- * quero habilitar o clique no item para poder removê-lo
- * verificar o local onde usar o itemDaLista
- */
-console.log(itemDaLista)
-itemDaLista.addEventListener("click", () => {
-    itemDaLista.style.backgroundColor = "white";
-})
-
 
 botaoRemover.addEventListener("click", () => {
+    let valorDoInput = document.querySelector("#tarefa").value;
     if (valorDoInput == '' || valorDoInput == null) {
         alert("Digite alguma tarefa a ser excluída.");
         return;
     }
+    let item = document.querySelectorAll("ul .lista__itens");
+    item.forEach( (elemento) => {
+        if(valorDoInput === elemento.textContent){
+            listaDeItens.removeChild(elemento);
+            document.querySelector("#tarefa").value = '';
+        }
+    })
 })
