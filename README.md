@@ -6,3 +6,5 @@ Para adicionar elementos, escreva o que desejar.
 Para remover elementos, deve-se digitar exatamente o nome do elemento que quer retirar, incluindo letras maiúsculas, minúsculas, espaços etc.
 
 Próxima feature: clicar no elemento criado e removê-lo sem necessidade de digitar o nome.
+
+Edit: feature acima implementada.
