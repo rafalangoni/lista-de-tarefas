@@ -37,3 +37,5 @@ botaoRemover.addEventListener("click", () => {
         }
     })
 })
+
+console.log("teste")
