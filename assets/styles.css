@@ -91,3 +91,7 @@ body{
 .lista__itens--oculto{
     display: none;
 }
+
+.item__selecionado{
+    background-color: #fdfdfd;
+}
